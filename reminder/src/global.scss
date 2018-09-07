@@ -1,0 +1,36 @@
+//RESET
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+    margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+input, button {
+  border: none;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+//COLORS
+  $black: #121212;
+  $darkGrey: #232323;
+  $lightGrey: #343434;
+  $lighterGrey: #8c8c8c;
+  $white: #ffffff;
