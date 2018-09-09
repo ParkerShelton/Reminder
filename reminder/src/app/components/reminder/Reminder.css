@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+input, button {
+  border: none; }
+
+ol, ul {
+  list-style: none;
+  list-style-type: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.Reminder {
+  display: flex;
+  width: 25%;
+  height: 60px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #232323;
+  border-radius: 3px;
+  border: 3px solid #97edcb; }
+  .Reminder .reminderInput {
+    margin: auto;
+    width: 85%;
+    height: 40%;
+    color: #dddddd;
+    background-color: #121212;
+    border: 1px solid #343434;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px; }
+    .Reminder .reminderInput ::placeholder {
+      color: #8c8c8c; }
