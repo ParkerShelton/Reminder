@@ -17,8 +17,6 @@ class TodoList extends Component {
         ]
       }
     }
-
-    this.handleChange = this.handleChange.bind(this);
   }
 
   clearInput(event) {
@@ -29,15 +27,15 @@ class TodoList extends Component {
     let todoList = this.state.todoList;
 
 
-    if(event.target.name === "taskTitle") {
+    if(event.target.className === "taskTitle") {
       todoList.title = event.target.value;
     }
 
-    if(event.target.name === "taskInput") {
+    if(event.target.className === "taskInput") {
       todoList.tasks[index].name = event.target.value;
     }
 
-    if(event.target.name === "taskCheckbox") {
+    if(event.target.className === "taskCheckbox") {
       if(event.target.checked === true) {
         todoList.tasks[index].isChecked = true;
         
@@ -89,9 +87,9 @@ class TodoList extends Component {
     let taskList = this.state.todoList.tasks.map((task, index) => {      
       return(
         <li className="taskContainer" key={index}>
-          <input name="taskCheckbox" className="taskCheckbox" type="checkbox" onChange={(e) => {this.handleChange(e, index)}} />
+          <input className="taskCheckbox" type="checkbox" onChange={(e) => {this.handleChange(e, index)}} />
 
-          <input name="taskInput" className="taskInput" placeholder="Enter Task" type="text" value={task.name} onChange={(e) => {this.handleChange(e, index)}} />
+          <input className="taskInput" placeholder="Enter Task" type="text" value={task.name} onChange={(e) => {this.handleChange(e, index)}} />
 
           <button className="taskRemove" onClick={() => {this.removeTask(task)}} >X</button>
         </li>
