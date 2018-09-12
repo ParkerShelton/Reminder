@@ -1,0 +1,47 @@
+@import '../../../global.scss';
+
+
+
+.Notes {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  // height: 120px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: $darkGrey;
+  border-radius: 3px;  
+
+  .noteTitle {
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+    margin-top: 15px;
+    margin: auto; 
+    
+    color: $white;
+    background-color: $black;
+    border: 1px solid $lightGrey;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+
+    ::placeholder {
+      color: $lighterGrey;
+    }
+  }
+
+  .noteInput {
+    width: 90%;
+    height: 200px;
+    margin: auto; 
+    margin-top: 20px;
+    resize: vertical;
+    font-size: 15px;
+    color: $lighterGrey;
+    background-color: $black;
+    border: 1px solid $lightGrey;
+    border-radius: 3px;    
+  }
+}

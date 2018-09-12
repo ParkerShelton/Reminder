@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+input, button {
+  border: none; }
+
+ol, ul {
+  list-style: none;
+  list-style-type: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.Notes {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #232323;
+  border-radius: 3px; }
+  .Notes .noteTitle {
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+    margin-top: 15px;
+    margin: auto;
+    color: #ffffff;
+    background-color: #121212;
+    border: 1px solid #343434;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px; }
+    .Notes .noteTitle ::placeholder {
+      color: #8c8c8c; }
+  .Notes .noteInput {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    resize: vertical;
+    font-size: 15px;
+    color: #8c8c8c;
+    background-color: #121212;
+    border: 1px solid #343434;
+    border-radius: 3px; }

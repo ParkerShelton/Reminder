@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Header from './components/header/Header';
 import TodoList from './components/todoList/TodoList';
 import RecipeList from './components/recipeList/RecipeList';
 import Reminder from './components/reminder/Reminder';
+import Notes from './components/notes/Notes';
 import './App.css';
 
 class App extends Component {
@@ -9,19 +11,21 @@ class App extends Component {
     super(props);
 
     this.state = {
-     
+      components: [
+          <TodoList />,
+          <RecipeList />,
+          <Reminder />,
+          <Notes />
+      ]
     }
   }
-
-
-
 
   render() {
     return (
       <div className="App">
-        <TodoList />
-        <Reminder />
-        {/* <RecipeList /> */}
+        <Header />
+
+       {this.state.components}
       </div>
     );
   }
